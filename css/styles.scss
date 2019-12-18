@@ -1,0 +1,218 @@
+
+
+
+
+@import "../scss/bootstrap.scss";
+
+
+:root {
+    --clr-dark: #2B3430;
+    --clr-white: #f4f4f4;
+}
+
+
+$primary: #E5AC2B;
+$light: #f4f4f4;
+$dark: #2B3430;
+
+
+
+@import "../scss/bootstrap";
+
+html{
+    height: 100%;
+    body{
+        overflow-x: hidden;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+}
+
+  
+
+
+// HEADER START
+header {
+    
+    nav {
+    background: var(--clr-dark);
+
+        btn {
+            background: var(--clr-white)!important;
+        }
+        a {
+            color: var(--clr-white);
+            text-decoration: none;
+
+            &:hover {
+                color: $warning;
+            }
+        }
+    }
+}
+
+// HEADER END
+
+//FOOTER START
+
+footer {
+    background: var(--clr-dark);
+    margin-top: auto;
+    a {
+        color: var(--clr-white);
+        text-decoration: none;
+
+        &:hover {
+            color: $warning;
+        }
+    }
+    ul {
+        color: var(--clr-white);
+       text-align: right;
+       margin-bottom: 0;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-left: auto;
+            padding: 20px;
+            
+        }
+    }
+}
+
+//FOOTER END
+
+//HOME PAGE START   
+
+#homePage {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.20)), url("/images/homepage-background@2x.jpg");
+   
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    h1 {
+        margin-top: 250px;
+        font-weight: 800;
+        
+    }
+}
+
+#signUp {
+    background-image: url("/images/signup-image@2x.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+
+    p {
+        font-weight: 800;
+        font-size: 1.75rem;
+        
+    }
+
+    input {
+        width: 300px;
+        border: 1px solid var(--clr-dark);
+    }
+    button {
+        border: 1px solid var(--clr-dark);
+    }
+    
+}
+
+//HOME PAGE END 
+
+// LOGIN/SIGNUP PAGE START
+
+#loginForm {
+    // border: 1px solid var(--clr-dark);
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#signUpForm {
+    // border: 1px solid var(--clr-dark);
+    background: var(--clr-dark);
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+// LOGIN/SIGNUP PAGE END
+
+
+// STORE PAGE START
+
+#storeCards {
+
+    
+         h3, .price {
+            
+            font-weight: bold;
+        }
+    
+        .price {
+            color: $primary;
+            font-size: 1.25rem;
+        }
+
+        a {
+            text-decoration: none!important;
+            list-style: none;
+            color: black !important;
+        }
+    
+}
+
+// STORE PAGE END
+
+
+// ITEM PAGE START
+
+
+#itemPage {
+    
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        margin: 10px 0 20px 0;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    
+
+    .price {
+        color: $primary;
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+
+    a {
+       display: inline-block;
+       color: $dark;
+
+       &:hover {
+           cursor: pointer!important;
+       }
+    }
+}
+
+    
+
+
+
+// ITEM PAGE END
